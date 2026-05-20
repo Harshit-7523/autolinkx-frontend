@@ -33,9 +33,11 @@ function ProductList() {
 
   const [loading, setLoading] = useState(true);
 
-  const [search, setSearch] = useState("");
+  // const [search, setSearch] = useState("");
+  const [search] = useState("");
 
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  // const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedCategory] = useState("All");
 
   useEffect(() => {
     fetchProducts();
