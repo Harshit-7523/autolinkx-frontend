@@ -15,7 +15,8 @@ function OrdersPage() {
     try {
 
       const response = await axios.get(
-        `http://localhost:8080/order/${userId}`
+        // `http://localhost:8080/order/${userId}`
+        `https://autolinkx-backend.onrender.com/order/${userId}`
       );
 
       console.log(response.data);

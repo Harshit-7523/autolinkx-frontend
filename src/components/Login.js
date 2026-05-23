@@ -14,7 +14,8 @@ function Login() {
     try {
 
       const res = await axios.post(
-        "http://localhost:8080/auth/login",
+        // "http://localhost:8080/auth/login",
+        "https://autolinkx-backend.onrender.com/auth/login",
         {
           email,
           password,

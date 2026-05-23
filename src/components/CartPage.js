@@ -19,7 +19,7 @@ function CartPage() {
     try {
 
       const response = await axios.get(
-        `http://localhost:8080/cart/${userId}`
+        `https://autolinkx-backend.onrender.com/cart/${userId}`
       );
 
       setCartItems(response.data);
@@ -43,7 +43,8 @@ function CartPage() {
     try {
 
       await axios.put(
-        `http://localhost:8080/cart/increase/${id}`
+        // `http://localhost:8080/cart/increase/${id}`
+        `https://autolinkx-backend.onrender.com/cart/increase/${id}`
       );
 
       fetchCart();
@@ -61,7 +62,9 @@ function CartPage() {
     try {
 
       await axios.put(
-        `http://localhost:8080/cart/decrease/${id}`
+        // `http://localhost:8080/cart/decrease/${id}`
+        `https://autolinkx-backend.onrender.com/cart/decrease/${id}`
+
       );
 
       fetchCart();
@@ -79,7 +82,8 @@ function CartPage() {
     try {
 
       await axios.delete(
-        `http://localhost:8080/cart/delete/${id}`
+        // `http://localhost:8080/cart/delete/${id}`
+        `https://autolinkx-backend.onrender.com/cart/delete/${id}`
       );
 
       fetchCart();
@@ -97,7 +101,8 @@ function CartPage() {
     try {
 
       await axios.post(
-        `http://localhost:8080/order/place/${userId}`
+        // `http://localhost:8080/order/place/${userId}`
+        `https://autolinkx-backend.onrender.com/order/place/${userId}`
       );
 
       alert("Order placed successfully!");

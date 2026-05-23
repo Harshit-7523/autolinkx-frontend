@@ -24,7 +24,8 @@ import product15 from "../assets/product15.png";
 import product16 from "../assets/product16.png";
 
 const API = axios.create({
-  baseURL: "http://localhost:8080",
+  // baseURL: "http://localhost:8080",
+  baseURL: "https://autolinkx-backend.onrender.com",
 });
 
 function ProductList() {
@@ -201,8 +202,8 @@ function ProductList() {
 
     try {
 
-      const userId = 1;
-
+      // const userId = 1;
+      const userId = localStorage.getItem("userId");
       await API.post("/cart/add", {
         userId,
         productId,
@@ -223,7 +224,8 @@ function ProductList() {
 
     try {
 
-      const userId = 1;
+      // const userId = 1;
+      const userId = localStorage.getItem("userId");
 
       await API.post("/cart/add", {
         userId,

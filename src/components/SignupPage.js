@@ -5,7 +5,8 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 const API = axios.create({
-  baseURL: "http://localhost:8080"
+  // baseURL: "http://localhost:8080"
+  baseURL: "https://autolinkx-backend.onrender.com"
 });
 
 function SignupPage() {

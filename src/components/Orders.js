@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:8080"
+  // baseURL: "http://localhost:8080"
+  baseURL: "https://autolinkx-backend.onrender.com"
 });
 
 function Orders() {

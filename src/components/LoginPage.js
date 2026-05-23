@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const API = axios.create({
-  baseURL: "http://localhost:8080"
+  baseURL:"https://autolinkx-backend.onrender.com"
 });
 
 function LoginPage() {
