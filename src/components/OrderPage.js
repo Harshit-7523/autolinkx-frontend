@@ -6,7 +6,8 @@ function OrdersPage() {
 
   const [orders, setOrders] = useState([]);
 
-  const userId = 1;
+  // const userId = 1;
+  const userId = localStorage.getItem("userId");
 
   // ✅ FETCH ORDERS
 
