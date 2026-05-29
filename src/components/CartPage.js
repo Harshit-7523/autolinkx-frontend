@@ -10,7 +10,9 @@ function CartPage() {
 
   const navigate = useNavigate();
 
-  const userId = 1;
+  // const userId = 1;
+
+  const userId = localStorage.getItem("userId");
 
   // ✅ FETCH CART
 
